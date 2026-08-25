@@ -5,3 +5,9 @@ pandas
 tqdm
 matplotlib
 onnx
+
+# Simulation Controller Dependencies
+docker>=6.0.0
+psutil>=5.9.0
+redis>=4.3.0
+PyYAML>=6.0

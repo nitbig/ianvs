@@ -1,0 +1,41 @@
+# Copyright (c) 2024 KubeEdge Contributors
+# Licensed under Apache License 2.0
+
+environment:
+  name: edge_cloud_simulation
+  description: Edge-cloud collaborative AI simulation
+  type: docker_compose
+
+host_requirements:
+  min_memory_gb: 4
+  min_disk_space_gb: 10
+  docker_required: true
+  python_version: "3.8+"
+
+modules:
+  database:
+    enabled: true
+    image: postgres:15
+    user: ianvs_user
+    database: ianvs_sim
+    port: 5432
+
+  message_queue:
+    enabled: true
+    image: redis:7-alpine
+    port: 6379
+
+  monitoring:
+    enabled: true
+    image: prom/prometheus:latest
+    port: 9090
+
+networks:
+  simulation_network:
+    driver: bridge
+
+volumes:
+  data_volume:
+    driver: local
+  logs_volume:
+    driver: local
