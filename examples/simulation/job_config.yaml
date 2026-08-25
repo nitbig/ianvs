@@ -1,0 +1,44 @@
+# Copyright (c) 2024 KubeEdge Contributors
+# Licensed under Apache License 2.0
+
+name: lifelong_learning_job
+algorithm: incremental_learning
+algo_params:
+  learning_rate: 0.001
+  batch_norm: true
+
+dataset: /data/lifelong_dataset
+dataset_format: image
+split:
+  train: 0.8
+  test: 0.2
+
+workers: 4
+worker_roles:
+  w0: edge_trainer
+  w1: edge_trainer
+  w2: cloud_trainer
+  w3: cloud_aggregator
+
+execution:
+  epochs: 10
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: adam
+
+resources:
+  memory_limit: 2Gi
+  cpu_limit: "1"
+  gpu_required: false
+
+monitoring:
+  metrics:
+    - accuracy
+    - loss
+    - latency
+  monitoring_interval: 5
+
+output:
+  results_dir: /results
+  save_models: true
+  save_logs: true

@@ -1,0 +1,287 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260825213949
+Username: DESKTOP-5PCTDSH\pawanr
+RunAs User: DESKTOP-5PCTDSH\pawanr
+Configuration Name: 
+Machine: DESKTOP-5PCTDSH (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "e:\Softwares\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 9448
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is E:\study\code\open source\ianvs\task1-terminal-transcript.txt
+PS E:\study\code\open source\ianvs> python version
+C:\Users\pawanr\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'E:\\study\\code\\open source\\ianvs\\version': [Er
+rno 2] No such file or directory
+PS E:\study\code\open source\ianvs> python --version
+Python 3.14.7
+PS E:\study\code\open source\ianvs> python -m pip --version
+pip 26.2.1 from C:\Users\pawanr\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pip (python 3.14)
+PS E:\study\code\open source\ianvs> docker version
+  Version:          0.19.0
+  GitCommit:        de40ad0
+PS E:\study\code\open source\ianvs> python -c "import docker; print('Docker SDK:', docker.__version__); print('docker ping:', docker.from_env().ping())"
+
+PS E:\study\code\open source\ianvs> set-executionpolicy -scope process -executionpolicyremotesigned
+>> TerminatingError(Set-ExecutionPolicy): "A parameter cannot be found that matches parameter name 'executionpolicyremotesigned'."
+Set-ExecutionPolicy : A parameter cannot be found that matches parameter name 'executionpolicyremotesigned'.
+At line:1 char:36
++ set-executionpolicy -scope process -executionpolicyremotesigned
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : A parameter cannot be found that matches parameter name 'executionpolicyremotesigned'.
+At line:1 char:36
++ set-executionpolicy -scope process -executionpolicyremotesigned
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+
+PS E:\study\code\open source\ianvs> set-executionpolicy -scope process -executionpolicy remotesigned
+PS E:\study\code\open source\ianvs> .\.venv\Scripts\Avtivate.ps1
+.\.venv\Scripts\Avtivate.ps1 : The term '.\.venv\Scripts\Avtivate.ps1' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At line:1 char:1
++ .\.venv\Scripts\Avtivate.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\.venv\Scripts\Avtivate.ps1:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+.\.venv\Scripts\Avtivate.ps1 : The term '.\.venv\Scripts\Avtivate.ps1' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ .\.venv\Scripts\Avtivate.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\.venv\Scripts\Avtivate.ps1:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS E:\study\code\open source\ianvs> .\.venv\scripts\activate.ps1
+PS E:\study\code\open source\ianvs>
+(.venv) python --version
+
+PS E:\study\code\open source\ianvs>
+(.venv) python -c "import sys;print(sys.executable)"
+
+PS E:\study\code\open source\ianvs>
+(.venv) python -m pip install -r requirements.txt
+s-2.25.0 numpy-2.5.2 onnx-1.22.0 packaging-26.3 pandas-3.0.5 pillow-12.3.0 prettytable-2.5.0 protobuf-7.36.0 pyparsing-3.3.2 python-dateutil-2.9.0.post0 red
+is-8.1.0 scikit-learn-1.9.0 scipy-1.18.1 six-1.17.0 threadpoolctl-3.6.0 tqdm-4.70.0 typing_extensions-4.16.0 tzdata-2026.3 wcwidth-0.8.2
+PS E:\study\code\open source\ianvs>
+(.venv) python -m pip check
+
+PS E:\study\code\open source\ianvs>
+(.venv) ianvs --help
+ianvs : The term 'ianvs' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ianvs --help
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (ianvs:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ianvs : The term 'ianvs' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ianvs --help
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (ianvs:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS E:\study\code\open source\ianvs>
+(.venv) python -m pip show ianvs
+
+PS E:\study\code\open source\ianvs>
+(.venv) get-children . -filter "pyproject.toml"
+get-children : The term 'get-children' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-children . -filter "pyproject.toml"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-children:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get-children : The term 'get-children' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-children . -filter "pyproject.toml"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-children:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS E:\study\code\open source\ianvs>
+(.venv) getchildItem . -filter "setup.py"
+getchildItem : The term 'getchildItem' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ getchildItem . -filter "setup.py"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (getchildItem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+getchildItem : The term 'getchildItem' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ getchildItem . -filter "setup.py"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (getchildItem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS E:\study\code\open source\ianvs>
+(.venv) getchilditem -name
+getchilditem : The term 'getchilditem' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ getchilditem -name
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (getchilditem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+getchilditem : The term 'getchilditem' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ getchilditem -name
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (getchilditem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS E:\study\code\open source\ianvs>
+(.venv) get-childitem -name
+.github
+.venv
+core
+docs
+examples
+ianvs
+resources
+tests
+.gitignore
+benchmarking.py
+build.envd
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE
+OWNERS
+OWNERS_ALIASES
+README.md
+requirements.txt
+setup.py
+task1-terminal-transcript.txt
+testcontroller.py
+PS E:\study\code\open source\ianvs>
+(.venv) get-childitem -recurse -filter "pyproject.toml"
+
+
+    Directory: E:\study\code\open source\ianvs\.venv\Lib\site-packages\pandas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-08-2026     21:52          27650 pyproject.toml
+
+
+PS E:\study\code\open source\ianvs>
+(.venv) get-childitem -recurse -filter "setup.py"
+
+
+    Directory: E:\study\code\open source\ianvs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        15-08-2026     18:47           4091 setup.py
+
+
+    Directory: E:\study\code\open source\ianvs\.venv\Lib\site-packages\adodbapi
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-08-2026     05:49           2194 setup.py
+
+
+    Directory: E:\study\code\open source\ianvs\.venv\Lib\site-packages\numpy\_core\tests\examples\cython
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-08-2026     21:49            898 setup.py
+
+
+    Directory: E:\study\code\open source\ianvs\.venv\Lib\site-packages\numpy\_core\tests\examples\limited_api
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-08-2026     21:49            461 setup.py
+
+
+    Directory: E:\study\code\open source\ianvs\.venv\Lib\site-packages\win32\Demos\c_extension
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-08-2026     05:49            783 setup.py
+
+
+PS E:\study\code\open source\ianvs>
+(.venv) get-childitem .\ianvs
+
+
+    Directory: E:\study\code\open source\ianvs\ianvs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        25-08-2026     15:51                simulators
+
+
+PS E:\study\code\open source\ianvs>
+(.venv) python -m ianvs --help
+
+PS E:\study\code\open source\ianvs>
+(.venv) get-children -name
+get-children : The term 'get-children' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-children -name
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-children:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get-children : The term 'get-children' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-children -name
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-children:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS E:\study\code\open source\ianvs>
+(.venv) get-childitem -name
+.github
+.venv
+core
+docs
+examples
+ianvs
+resources
+tests
+.gitignore
+benchmarking.py
+build.envd
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE
+OWNERS
+OWNERS_ALIASES
+README.md
+requirements.txt
+setup.py
+task1-terminal-transcript.txt
+testcontroller.py
+PS E:\study\code\open source\ianvs>
+(.venv) get-childitem .\ianvs -name
+simulators
+PS E:\study\code\open source\ianvs>

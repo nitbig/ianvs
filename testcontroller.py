@@ -1,5 +1,4 @@
-# Add these imports at top
-from ianvs.simulators import (
+from simulators import (
     EnvironmentAdministrator,
     JobAdministrator,
     ConfigurationError,
