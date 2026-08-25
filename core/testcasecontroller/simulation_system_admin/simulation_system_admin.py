@@ -33,8 +33,7 @@ def check_host_docker():
         # trying to install docker
         LOGGER.info("trying to install docker")
         try:
-            shell_install_docker = "curl -fsSL https://get.docker.com | \
-bash -s docker --mirror Aliyun"
+            shell_install_docker = "curl -fsSL https://get.docker.com | \ bash -s docker --mirror Aliyun"
             install_docker = subprocess.run(
                 shell_install_docker, shell=True, check=True)
 
