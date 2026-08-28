@@ -53,14 +53,13 @@ class BaseModel:
     def load(self, model_url=None):
         if model_url:
             match = re.search(r"_([A-Za-z0-9_-]+)\.pth(?:\.tar)?$", model_url)
-            if match is None:
-                raise ValueError(
-                    "Cannot infer model architecture from filename: '{}'. "
-                    "Expected filename pattern like 'model_<arch>.pth' "
-                    "or 'model_<arch>.pth.tar'.".format(model_url)
-                )
 
-            arch = match.group(1)
+            if match is None:
+               raise ValueError(
+                "Cannot infer model architecture from filename: '{}'".format(model_url)
+                 )
+
+             arch = match.group(1)
 
             self.model = models.create(
                 arch, num_features=0, dropout=0, norm=True, BNNeck=True
